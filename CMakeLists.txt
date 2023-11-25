@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.26)
 project(regex)
 
 set(CMAKE_CXX_STANDARD 20)
-include_directories("/opt/homebrew/Cellar/pcre2/10.42/include")
 
 find_package(fmt REQUIRED)
 add_executable(regex main.cpp
