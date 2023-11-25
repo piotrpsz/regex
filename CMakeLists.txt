@@ -9,7 +9,7 @@ add_executable(regex main.cpp
         pcregex.h)
 
 target_include_directories(regex PUBLIC
-        "/opt/homebrew/Cellar/pcre2/10.42/include"
+        fmt
 )
 target_link_libraries(regex PUBLIC
         pcre2-8
