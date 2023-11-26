@@ -9,7 +9,7 @@
 
 int main() {
     std::string pattern = "\\b(Piótr\\w*)\\b";
-    std::string subject = "Włodzimierz Piótruś Pszczółkowski \nAbc Cde Piótruś Wxxx \n Piótr\n";
+    std::string subject = "Włodzimierz Piótr Pszczółkowski \nAbc Cde Piótruś Wxxx \n Piótr\n";
     Regex rgx{pattern.c_str(), subject.c_str(), subject.size()};
     if (auto rs = rgx.run(true); !rs.empty()) {
         for (auto item : rs) {
